@@ -13,6 +13,7 @@
 		<style type="text/css">
 			.linkOn {color: green}
 			.linkOff {text-decoration: line-through; color: red}
+			
 		</style>
 		<script type="text/javascript" src="processamento.js"></script>
 	</head>
@@ -20,7 +21,7 @@
 		<h1>Usando XMLHttpRequest para verificar a disponibilidade de um numero "x" de Domínios, independente de novas requisições ao Servidor.</h1>
 		<p>Informando alguns links para Websites para verificar:
 			<br />
-			<strong>Obs: </strong>A velocidade de verificação infelizmente depende da conexão do usuário com a Internet, pois os domínios são checados a partir de requisições do browser do cliente ao servidor. Ou seja, caso o <span style="text-decoration: line-through">cliente esteja enfrentando problemas em sua rede que deixa o domínio inacessível, esta informação se manterá, mesmo não sendo a correta</span>. Resolvido usando a função get_headers() do PHP.
+			<strong>Obs: </strong>A velocidade de verificação infelizmente depende da conexão do usuário com a Internet, pois os domínios são checados a partir de requisições do browser do cliente ao servidor. Ou seja, caso o <span style="text-decoration: line-through">cliente esteja enfrentando problemas em sua rede que deixa o domínio inacessível, esta informação se manterá, mesmo não sendo a correta</span>. Resolvido utilizando a função get_headers() do PHP.
 		</p>
 		
 		<ul id="checarLinks">

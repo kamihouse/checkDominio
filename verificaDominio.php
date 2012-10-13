@@ -6,7 +6,7 @@
 	* Autor: Thiago Pereira Rosa - www.thiago.cjb.net
 	**/
 
-	// Configurando ENCODE, recuperando os dados passados via URL
+	// Configurando o ENCODE, recuperando os dados enviados pela URL
 	header('Content-Type: text/plain; charset=iso-8859-1');
 	$url = $_GET['url'];
 	$dominio = $_GET['link'];
@@ -15,7 +15,7 @@
 	// Exibindo o Link para alterar seu Estilo
 	print("document.getElementsByTagName('a')['$dominio'].className = '$status'");
 	// Verificando se existe mais links para prosseguir
-	// A formatação abaixo é importante para ser interpretada corretamente
+	// A formatação como está abaixo é importante para ser interpretada corretamente
 	printf('
 if('.$dominio.' < (linksMax - 1)){
 	verificaDominio('.$dominio.' + 1);

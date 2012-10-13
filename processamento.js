@@ -4,6 +4,7 @@
 * processamento.js - V.1
 * Autor: Thiago Pereira Rosa - www.thiago.cjb.net
 **/
+
 var xmlhttp = false;
 var linksMax = -1;
 var links = null;
