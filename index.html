@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+* 14/10/2012
+* Script para verificar disponibilidade do domínio via AJAX
+* verifica.php - V.1
+* Autor: Thiago Pereira Rosa - www.thiago.cjb.net
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Verificando Domínios de maneira assíncrona</title>
+		<meta name="author" content="Thiago Pereira Rosa - www.thiago.cjb.net" />
+		<style type="text/css">
+			.linkOn {color: green}
+			.linkOff {text-decoration: line-through; color: red}
+		</style>
+		<script type="text/javascript" src="processamento.js"></script>
+	</head>
+	<body>
+		<h1>Usando XMLHttpRequest para verificar a disponibilidade de um numero "x" de Domínios, independente de novas requisições ao Servidor.</h1>
+		<p>Informando alguns links para Websites para verificar:
+			<br />
+			<strong>Obs: </strong>A velocidade de verificação infelizmente depende da conexão do usuário com a Internet, pois os domínios são checados a partir de requisições do browser do cliente ao servidor. Ou seja, caso o <span style="text-decoration: line-through">cliente esteja enfrentando problemas em sua rede que deixa o domínio inacessível, esta informação se manterá, mesmo não sendo a correta</span>. Resolvido usando a função get_headers() do PHP.
+		</p>
+		
+		<ul id="checarLinks">
+			<li><a href="http://www.globo.com" />Globo.com</a></li>
+			<li><a href="http://www.google.com" />Google</a></li>
+			<li><a href="http://kamihouse.dyndns.org:81" />KamiHouse</a></li>
+			<li><a href="http://link.nao.existe" />Não Existe</a></li>
+			<li><a href="http://uol.com.br" />UOL</a></li>
+			<li><a href="http://facebook.com" />Facebook</a></li>
+			<li><a href="http://wgo.com.br" />WGO Telecom</a></li>
+		</ul>
+		<p>desenvolvido por <a href="http://thiago.cjb.net">Thiago Pereira Rosa</a></p>
+	</body>
+</html>
